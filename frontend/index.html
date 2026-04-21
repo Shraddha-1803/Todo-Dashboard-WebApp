@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <div class="profile-icon">
+        <img id="previewImg" src="" alt="Preview" />
+        <span id="defaultIcon">👤</span>
+    </div>
+
+    <h2 id="formTitle">Login</h2>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Email ID" required />
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+
+      <button type="submit" class="btn">LOGIN</button>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signupForm" class="hidden">
+      <div class="input-group">
+        <input type="text" name="name" placeholder="Full Name" required />
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Email ID" required />
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+
+      <div class="input-group">
+        <input type="file" name="image" required />
+      </div>
+
+      <button type="submit" class="btn">SIGNUP</button>
+    </form>
+
+    <p class="toggle">
+      <span id="toggleText">Don't have an account?</span>
+      <span id="toggleBtn">Signup</span>
+    </p>
+
+  </div>
+
+</div>
+
+<div id="card"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PROFILE MENU -->
+<div id="profileMenu">
+  <div id="profileHeader" onclick="toggleProfile()">
+    <img id="navProfileImg" />
+    <span id="navName"></span>
+  </div>
+
+  <div id="dropdown" class="hidden">
+    <img id="dropImg" />
+    <h3 id="dropName"></h3>
+    <button onclick="goToUsers()">View All Users</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+  <h1>Task Dashboard</h1>
+
+  <!-- COUNTERS -->
+  <div class="stats">
+    <div>Total <b id="totalCount">0</b></div>
+    <div>Done <b id="doneCount">0</b></div>
+    <div>Pending <b id="pendingCount">0</b></div>
+  </div>
+
+  <div class="progress-container">
+    <div id="progressBar"></div>
+  </div>
+
+  <!-- ADD TODO -->
+  <div class="add-todo">
+    <input type="text" id="todo-input" placeholder="Enter task..." />
+    <input type="date" id="due-date" />
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <!-- 🔥 NEW IMAGE INPUT -->
+    <input type="file" id="task-image" accept="image/*">
+
+    <button id="add-btn">Add</button>
+  </div>
+
+  <!-- TODO LIST -->
+  <div id="todo-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1776344848305,
+    "name": "Shraddha",
+    "email": "shradag88@gmail.com",
+    "password": "$2b$10$u7DX1eWsmIyLggxksQOW8ulYSFE6ceCJEpaDn82TgViyKO47T7wzq",
+    "image": "1776344848180-coffee.jpg"
+  },
+  {
+    "id": 1776346514929,
+    "name": "shraddha ag",
+    "email": "shrad@gmail.com",
+    "password": "$2b$10$aEsDjryaWzbCOzjJE4hJqOpJAJQjjuuQHMZxLAdPAjea9DRYdPnoi",
+    "image": "1776346514699-coffee.jpg"
+  },
+  {
+    "id": 1776364593297,
+    "name": "john doe",
+    "email": "john@example.com",
+    "password": "$2b$10$qKYoYzz0vfsCGCxUg7WAy.7KeWK.ifh67t9hoQBu84XFOtPCTmS0m",
+    "image": "1776364593083-WhatsApp Image 2024-10-18 at 00.44.50_7590d011.jpg"
+  },
+  {
+    "id": 1776403386411,
+    "name": "hardik",
+    "email": "hardik@gmail.com",
+    "password": "$2b$10$T8OX/4ApqIN6wK/gq7bsmOU.MmB0S49RY1P3VGFjEgARIuvrhQJTm",
+    "image": "1776403386153-coffee.jpg"
+  },
+  {
+    "id": 1776416496928,
+    "name": "harry",
+    "email": "harry@gmail.com",
+    "password": "$2b$10$39HhnZKE.fi88q.ZJjrskOL0oiaDL3MMRC2n29Gm3l6KajocIU9VC",
+    "image": "1776416496595-coffee.jpg"
+  }
+]

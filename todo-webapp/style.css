@@ -1,0 +1,238 @@
+/* ===== THEME ===== */
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --high: #ef4444;
+  --medium: #f59e0b;
+  --low: #10b981;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTAINER */
+.container {
+  width: 460px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  animation: fadeIn 0.4s ease;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* PROGRESS */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #111827;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: var(--primary);
+  transition: 0.4s;
+}
+
+/* ADD TODO */
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #111827;
+  color: white;
+}
+
+.add-todo input:focus,
+.add-todo select:focus {
+  border: 1px solid var(--primary);
+}
+
+.add-todo button {
+  padding: 10px;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background: var(--primary-hover);
+}
+
+/* ===== TODO CARD ===== */
+.todo-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #111827;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  animation: fadeSlideIn 0.25s ease;
+  transition: 0.25s;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+  border: 1px solid var(--primary);
+}
+
+/* IMAGE */
+.todo-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.todo-content {
+  flex: 1;
+}
+
+.todo-title {
+  font-weight: 500;
+}
+
+.todo-meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ACTIONS */
+.todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.todo-actions button:hover {
+  color: var(--high);
+}
+
+/* COMPLETED */
+.completed .todo-title {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* PRIORITY */
+.low { color: var(--low); }
+.medium { color: var(--medium); }
+.high { color: var(--high); }
+
+/* PROFILE MENU */
+#profileMenu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#profileHeader img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* DROPDOWN */
+#dropdown {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+}
+
+#dropdown img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+#dropdown button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1776408697359,
+    "text": "drink water",
+    "dueDate": "",
+    "priority": "low",
+    "completed": false,
+    "image": "blob:http://127.0.0.1:5500/033c3879-cb4e-433a-9fce-4375f4000465",
+    "email": "john@example.com"
+  },
+  {
+    "id": 1776416528210,
+    "text": "water plants",
+    "dueDate": "",
+    "priority": "medium",
+    "completed": true,
+    "image": "blob:http://127.0.0.1:5500/09e1420c-7aad-4fae-a4bf-4a951d0c9b5a",
+    "email": "harry@gmail.com"
+  },
+  {
+    "id": 1776416554897,
+    "text": "go to gym",
+    "dueDate": "2026-04-18",
+    "priority": "high",
+    "completed": true,
+    "image": "blob:http://127.0.0.1:5500/9318ff33-bedd-473d-be04-aabde61701ae",
+    "email": "harry@gmail.com"
+  }
+]
