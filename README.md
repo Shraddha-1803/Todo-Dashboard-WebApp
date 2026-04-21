@@ -31,6 +31,7 @@ A modern full-stack Todo Dashboard with authentication, task tracking, and profi
 
 ## 📁 Project Structure
 
+```
 BAKEND PROJ 3/
 │
 ├── backend/
@@ -61,7 +62,7 @@ BAKEND PROJ 3/
 ├── node_modules/
 ├── package.json
 └── README.md
-
+```
 
 ---
 
